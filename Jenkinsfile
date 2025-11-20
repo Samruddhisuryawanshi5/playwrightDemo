@@ -1,38 +1,17 @@
 pipeline {
     agent any
 
-    tools {
-        nodejs "Node18"    // The name you configured earlier
-    }
-
     stages {
-        stage('Checkout') {
+        stage('Install Dependencies') {
             steps {
-                git branch: 'main',
-                    url: 'https://github.com/your-repo.git'
+                bat 'npm install'
+                bat 'npx playwright install'
             }
         }
 
-        stage('Install dependencies') {
+        stage('Run Tests') {
             steps {
-                sh 'npm install'
-                sh 'npx playwright install --with-deps'
-            }
-        }
-
-        stage('Run Playwright tests') {
-            steps {
-                sh 'npx playwright test'
-            }
-        }
-
-        stage('Publish HTML Report') {
-            steps {
-                publishHTML(target: [
-                    reportDir: 'playwright-report',
-                    reportFiles: 'index.html',
-                    reportName: 'Playwright Report'
-                ])
+                bat 'npx playwright test'
             }
         }
     }
