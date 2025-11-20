@@ -33,7 +33,7 @@ pipeline {
                     <p>The HTML report is also attached to this email.</p>
                 """,
                 mimeType: 'text/html',
-                to: "your-email@gmail.com",
+                to: "samruddhisuryawanshi5@gmail.com",
                 attachmentsPattern: "playwright-report/index.html"
             )
         }
@@ -51,7 +51,7 @@ pipeline {
                     <p>Check Jenkins logs for details.</p>
                 """,
                 mimeType: 'text/html',
-                to: "your-email@gmail.com",
+                to: "samruddhisuryawanshi5@gmail.com",
                 attachmentsPattern: "playwright-report/index.html"
             )
         }
