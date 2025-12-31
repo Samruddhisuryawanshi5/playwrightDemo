@@ -1,0 +1,91 @@
+{
+    "RegisterPage": {
+        "firstName": "input[placeholder='First Name']",
+        "lastName": "input[placeholder='Last Name']",
+        "emailAddress": "input[type='email']",
+        "genderMale": "input[value='Male']",
+        "hobbiesCricket": "input[id='checkbox1']",
+        "submitButton": "#submitbtn"
+    },
+    "WebTablePage": {
+        "addUserBtn": "//button[contains(normalize-space(.),'Add') or contains(normalize-space(.),'Add New') or contains(normalize-space(.),'Add User')]",
+        "firstNameInput": "//input[@id='firstName' or @placeholder='First Name']",
+        "lastNameInput": "//input[@id='lastName' or @placeholder='Last Name']",
+        "emailInput": "//input[@id='userEmail' or @type='email']",
+        "submitBtn": "//button[@type='submit' or @id='submit' or contains(normalize-space(.),'Submit')]"
+    },
+    "AlertPage": {
+        "alertWithOK": "button[onclick='alertbox()']",
+        "alertWithCancel": "button[onclick='confirmbox()']",
+        "alertWithTextbox": "button[onclick='promptbox()']"
+    },
+    "loginPage": {
+        "loginToHomePage": "img[id='enterimg']"
+    },
+    "SwitchToPage": {
+        "switchToTab": "//a[text()='SwitchTo']",
+        "alertsLink": "a[href='Alerts.html']",
+        "windowsLink": "a[href='Windows.html']",
+        "framesLink": "a[href='Frames.html']",
+        "selectWindowTab": "a[href='#Seperate']",
+        "selectMultipleWindowTab": "a[href='#Multiple']",
+        "clickOnalertokWithcancal": "a[href='#CancelTab']",
+        "clickOnalertTextBox": "a[href='#Textbox']",
+        "alertWithOK": "button[onclick='alertbox()']",
+        "alertWithOKCancel": "button[onclick='confirmbox()']",
+        "alertWithTextbox": "button[onclick='promptbox()']",
+        "singleWindow": "a[href='http://www.selenium.dev']",
+        "separateWindowBtn": "button[onclick='newwindow()']",
+        "multipleWindowBtn": "button[onclick='multiwindow()']",
+        "singleFrame": "iframe[id='singleframe']",
+        "multiframe": "a[href='#Multiple']",
+        "inputSingleFrame": "input[type='text']",
+        "nestedFrameOuter": "iframe[src='MultipleFrames.html']",
+        "nestedFrameInner": "iframe[src='SingleFrame.html']"
+    },
+    "HomePage": {
+        "skipArrowBtn": "#enterimg"
+    },
+    "Widgets": {
+        "widgetsMenu": "//a[normalize-space(text())='Widgets']",
+        "accordionMenu": "//a[normalize-space(text())='Accordion']",
+        "firstAccordionHeading": "//div[@id='collapse1']/preceding-sibling::h4",
+        "firstAccordionBody": "#collapse1",
+        "datePickerMenu": "//a[text()=' Datepicker ']",
+        "dateInputField": "input[id='datepicker1']",
+        "autoCompleteMenu": "a[href='AutoComplete.html']",
+        "autoCompleteInput": "input[id='searchbox']",
+        "autoCompleteItem": "//a[contains(text(),'country')]",
+        "sliderMenu": "//a[text()=' Slider ']",
+        "sliderHandle": "//a[contains(@class,'ui-slider-handle')]",
+        "progressBarMenu": "//a[text()=' Progressbar ']",
+        "startProgressBtn": "#cricle-btn",
+        "progressValue": "span.percenttext"
+    },
+    "Interactions": {
+        "interactionsMenu": "a[href='Interactions.html']",
+        "dragAndDropOption":"//a[text()='Drag and Drop ']",
+        "draggableMenu": "a[href='Static.html']",
+        "draggableBox": "img[id='angular']",
+        "droppableMenu": "a[href='Static.html']",
+        "dragSource": "//div[@id='draggable' or contains(@class,'draggable') or contains(@class,'ui-draggable')]",
+        "dropTarget": "//div[@id='droppable' or contains(@class,'droppable') or contains(@class,'ui-droppable')]",
+        "resizableMenu": "a[href='Resizable.html']",
+        "resizeBox": "//div[@id='resizable' or contains(@class,'resizable') or contains(@class,'ui-resizable')]",
+        "resizeHandle": "div.ui-resizable-se",
+        "selectableMenu": "a[href='Selectable.html']",
+        "listItems": "ul#selectable li, .ui-selectable li, .defaultFunc li",
+        "sortableMenu": "a[href='Sortable.html']",
+        "sortableItems": ".ui-sortable li, ul.sortable li"
+    },
+    "More": {
+        "moreMenu": "//a[text()='More']",
+        "alertsDemoLink": "//a[text()='Alerts']",
+        "alertsDemoHeader": "//h1[contains(text(),'Alerts')]",
+        "basicAjaxDemoLink": "//a[text()='Basic Ajax Demo']",
+        "ajaxInputField": "#demo_id",
+        "ajaxSubmitBtn": "input[name='submit']",
+        "notificationMsgLink": "//a[text()='Notification Message']",
+        "notificationText": ".container p"
+    }
+}

@@ -1,0 +1,6 @@
+{
+  "RegisterData": [
+    { "first": "Akshay", "last": "Chavan", "email": "akshay@test.com" },
+    { "first": "John", "last": "Doe", "email": "john@test.com" }
+  ]
+}
