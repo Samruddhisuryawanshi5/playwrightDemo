@@ -49,10 +49,10 @@
     "Widgets": {
         "widgetsMenu": "//a[normalize-space(text())='Widgets']",
         "accordionMenu": "//a[normalize-space(text())='Accordion']",
-        "firstAccordionHeading": "//div[@id='collapse1']/preceding-sibling::h4",
+        "firstAccordionHeading": "div[id='collapse1'] div",
         "firstAccordionBody": "#collapse1",
-        "datePickerMenu": "//a[text()=' Datepicker ']",
-        "dateInputField": "input[id='datepicker1']",
+        "datePickerMenu": "a[href='Datepicker.html']",
+        "dateInputField": "input[id='datepicker2']",
         "autoCompleteMenu": "a[href='AutoComplete.html']",
         "autoCompleteInput": "input[id='searchbox']",
         "autoCompleteItem": "//a[contains(text(),'country')]",

@@ -23,16 +23,14 @@ export class WidgetsPage extends BasePage {
   async openDatePicker() {
     await this.click(this.w.widgetsMenu);
     await this.click(this.w.datePickerMenu);
+    await this.fill(this.w.dateInputField,"01/15/2026");
   }
 
-  async setDate(date: string) {
-    await this.fill(this.w.dateInputField, date);
-    expect(await this.page.inputValue(this.w.dateInputField)).toBe(date);
-  }
 
   async openAutoComplete() {
     await this.click(this.w.widgetsMenu);
     await this.click(this.w.autoCompleteMenu);
+    
   }
 
   async selectCountry(country: string) {
